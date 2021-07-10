@@ -17,15 +17,18 @@ export default ({
     display: block;
     padding: 10px;
     font-size: 12px;
-    background-color: #444444;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--light-color);
   }
   a{
     text-decoration: none;
-    color: white;
+    color:  var(--light-color);
   }
-  a:hover{
-    color: lightskyblue;
+  a:hover:first-child{
+    color: var( --second-color);
+  }
+  a:hover:last-child{
+    color: var( --third-color);
   }
   @media (min-width: 728px){
   .Footer{
