@@ -1,21 +1,18 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Hola mundo desde Vue"/>
+    <h1>I'm home baby</h1>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import HelloWorld from './HelloWorld.vue'
 
-export default Vue.extend({
+export default {
   name: 'Home',
   data () {
     return {
     }
   },
   components: {
-    HelloWorld
   }
-})
+}
 </script>
