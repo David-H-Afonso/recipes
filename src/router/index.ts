@@ -1,23 +1,56 @@
 import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home/Index.vue'
+import Router from 'vue-router'
 
-Vue.use(VueRouter)
+Vue.use(Router);
 
-const routes: Array<RouteConfig> = [
+const routerOptions = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home"
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About/Index.vue')
+    path: "/contact",
+    name: "Contact"
+  },
+  {
+    path: "/error",
+    name: "Error"
+  },
+  {
+    path: "/main",
+    name: "Main"
+  },
+  {
+    path: "/profile",
+    name: "Profile"
+  },
+  {
+    path: "/recipesearch",
+    name: "RecipeSearch"
+  },
+  {
+    path: "/yourrecipes",
+    name: "YourRecipes"
+  },
+  {
+    path: "/about",
+    name: "About"
+  },
+  { 
+    path: "*", 
+    redirect: { name: "Home" } 
   }
 ]
 
-const router = new VueRouter({
+const routes = routerOptions.map(r => {
+  return {
+    ...r,
+    // Lazy load
+    component: () => import(/* webpackChunkName: "[request]" */ `@/views/${r.name}/Index.vue`)
+  }
+})
+
+const router = new Router({
   routes
 })
 
