@@ -1,7 +1,10 @@
 <template>
-  <div class="home">
-    <h1>I'm home baby</h1>
-  </div>
+  <center><div class="home">
+    <h1>Soy el H1 del header</h1>
+    <h2>Soy el H2 del header</h2>
+    <a href="#/profile">Clickame!</a>
+    <p>Soy un texto super interesante </p>
+  </div></center>
 </template>
 
 <script lang="ts">
