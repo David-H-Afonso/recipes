@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # recetas
 
 ## Project setup
@@ -22,3 +23,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# recipes
+WIP Website
+>>>>>>> 169cf31c01aecce0de24b5a262adac2ff9850eb8
