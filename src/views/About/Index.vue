@@ -1,18 +1,14 @@
 <template>
   <div class="about">
-    <AboutComponent/>
+    <h1>About page</h1>
   </div>
 </template>
 
 <script>
-import AboutComponent from './AboutComponent.vue'
-
 export default ({
   setup() {
-  
   },
   components:{
-    AboutComponent
   }
 })
 </script>
