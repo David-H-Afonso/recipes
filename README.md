@@ -8,7 +8,7 @@
   <li>🔰 Vuex and Vue CLI</li>
   <li>☕ JavaScript and Typescript</li>
   <li>🎨 HTML & CSS using Sass</li>
-
+</ul>
 <h2>Try it here! 🧾</h2>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/12b0d818-0acc-4737-a7e1-5b1b92ca60e6/deploy-status)](https://app.netlify.com/sites/recipes-david-laura/deploys)
