@@ -1,18 +1,14 @@
 <template>
   <div class="Header">
     <header>
-      <div>
-        <ul>
-          <li><a href="#"> Icon</a></li>
-          <li><a href="#/yorrecipes"> Tus Recetas</a></li>
-          <li><a href="#/reicpessearch"> Buscar Recetas</a></li>
-        </ul>
+      <div class="header-recipes">
+        <a href="#"> Icon</a>
+        <a href="#/yorrecipes"> Tus Recetas</a>
+        <a href="#/reicpessearch"> Buscar Recetas</a>
       </div>
-      <div>
-        <ul>
-          <li><a href="#/contact"> Contact</a></li>
-          <li><a href="#/perfil"> Perfil</a></li>
-        </ul>
+      <div class="header-perfil">
+        <a href="#/contact"> Contact</a>
+        <a href="#/perfil"> Perfil</a>
       </div>
     </header>
   </div>
@@ -28,10 +24,29 @@ export default {
 
 <style lang="scss" scoped>
 
-.header{
+header{
   display: flex;
-  text-decoration: none;
+  flex-wrap: wrap;
+  margin: 0px;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+  margin-left: 2rem; 
+  font-size: 24px;
+}
+
+.header-perfil{
+  margin-right: 0;
+}
+.header-recipes{
+  margin-left: 0;
+}
+
+
+
+
 
 
 </style>
