@@ -15,8 +15,8 @@ export default ({
 <style lang="scss" scoped>
   .Footer{
     display: block;
-    padding: 15px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 12px;
     background-color: #444444;
     color: white;
   }
@@ -26,5 +26,17 @@ export default ({
   }
   a:hover{
     color: lightskyblue;
+  }
+  @media (min-width: 728px){
+  .Footer{
+    padding: 16px;
+    font-size: 16px;
+  }
+  }
+  @media (min-width: 1024px){
+  .Footer{
+    padding: 16px;
+    font-size: 18px;
+  }
   }
 </style>
